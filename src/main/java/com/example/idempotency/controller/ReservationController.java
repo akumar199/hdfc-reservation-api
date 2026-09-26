@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.idempotency.dto.ReservationRequest;
+import com.example.idempotency.entity.Reservation;
+import com.example.idempotency.service.ReservationService;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -40,4 +42,4 @@ public class ReservationController {
 	        return ResponseEntity.ok(reservation);
 	    }
 	}
-}
+
